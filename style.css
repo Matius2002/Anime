@@ -1,173 +1,165 @@
-/* General styles */
 body {
-    font-family: 'Poppins', sans-serif; /* Tipografía moderna */
-    background: linear-gradient(to bottom, #1a1a2e, #16213e);
-    color: #f8f8f8;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
+    font-family: 'Poppins', sans-serif; /* Establece la fuente del texto a 'Poppins', con respaldo en fuentes sans-serif. */
+    background: linear-gradient(to bottom, #1a1a2e, #16213e); /* Aplica un degradado vertical desde un azul oscuro hacia otro tono más oscuro. */
+    color: #f8f8f8; /* Define el color del texto como blanco grisáceo. */
+    margin: 0; /* Elimina los márgenes por defecto del cuerpo. */
+    padding: 0; /* Elimina los rellenos por defecto del cuerpo. */
+    line-height: 1.6; /* Define el espacio vertical entre líneas del texto. */
 }
 
 h1, h3 {
-    text-align: center;
-    color: #e94560; /* Color vibrante para los encabezados */
-    text-shadow: 2px 2px 4px #000;
+    text-align: center; /* Centra horizontalmente los títulos. */
+    color: #e94560; /* Establece un color rojo vibrante para el texto. */
+    text-shadow: 2px 2px 4px #000; /* Agrega una sombra de texto negra para un efecto tridimensional. */
 }
 
 h1 {
-    font-size: 2.5rem;
-    margin-top: 20px;
+    font-size: 2.5rem; /* Tamaño grande para el título principal. */
+    margin-top: 20px; /* Espaciado superior de 20px. */
 }
 
 h3 {
-    font-size: 1.8rem;
-    margin-top: 40px;
+    font-size: 1.8rem; /* Tamaño ligeramente más pequeño para subtítulos. */
+    margin-top: 40px; /* Espaciado superior de 40px. */
 }
 
-/* Images */
 img {
-    display: block;
-    margin: 20px auto;
-    max-width: 90%;
-    border-radius: 15px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.8);
-    transition: transform 0.3s ease-in-out;
-    object-fit: cover;
-    height: 500px;
-    width: 800px;
+    display: block; /* Asegura que la imagen sea un bloque completo. */
+    margin: 20px auto; /* Centra la imagen horizontalmente y agrega un margen vertical de 20px. */
+    max-width: 90%; /* Limita el ancho máximo al 90% del contenedor. */
+    border-radius: 15px; /* Bordes redondeados de 15px. */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.8); /* Sombra de la imagen para resaltar sobre el fondo. */
+    transition: transform 0.3s ease-in-out; /* Suaviza las transformaciones de escala. */
+    object-fit: cover; /* Ajusta el contenido de la imagen sin distorsionarla. */
+    height: 500px; /* Define la altura fija de la imagen. */
+    width: 800px; /* Define el ancho fijo de la imagen. */
 }
 
 img:hover {
-    transform: scale(1.05);
+    transform: scale(1.05); /* Aumenta el tamaño de la imagen ligeramente al pasar el mouse. */
 }
 
-/* Paragraphs */
 p {
-    max-width: 800px;
-    margin: 10px auto;
-    text-align: justify;
-    font-size: 1rem;
-    color: #d3d3d3;
+    max-width: 800px; /* Limita el ancho máximo del párrafo. */
+    margin: 10px auto; /* Centra el texto horizontalmente y agrega un margen vertical de 10px. */
+    text-align: justify; /* Justifica el texto para alinearlo uniformemente. */
+    font-size: 1rem; /* Tamaño estándar para el texto. */
+    color: #d3d3d3; /* Color gris claro para el texto. */
 }
 
 p strong {
-    color: #00adb5; /* Resaltar las palabras importantes */
+    color: #00adb5; /* Cambia el color de texto resaltado a un tono cian. */
 }
 
-/* Buttons (if needed in the future) */
 button {
-    background: #e94560;
-    border: none;
-    border-radius: 20px;
-    padding: 10px 20px;
-    color: #fff;
-    font-size: 1rem;
-    cursor: pointer;
-    margin: 20px auto;
-    display: block;
-    transition: background 0.3s ease;
+    background: #e94560; /* Fondo rojo vibrante para el botón. */
+    border: none; /* Elimina el borde por defecto del botón. */
+    border-radius: 20px; /* Bordes redondeados para un diseño más amigable. */
+    padding: 10px 20px; /* Espaciado interno del botón. */
+    color: #fff; /* Texto blanco para el contraste. */
+    font-size: 1rem; /* Tamaño estándar para el texto del botón. */
+    cursor: pointer; /* Cambia el cursor al icono de "clickeable". */
+    margin: 20px auto; /* Centra horizontalmente y agrega espacio vertical. */
+    display: block; /* Hace que el botón ocupe una línea completa. */
+    transition: background 0.3s ease; /* Suaviza el cambio de color de fondo. */
 }
 
 button:hover {
-    background: #f37272;
+    background: #f37272; /* Cambia el fondo a un tono más claro de rojo al pasar el mouse. */
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
+    /* Ajustes para dispositivos con un ancho máximo de 768px */
     h1 {
-        font-size: 2rem;
+        font-size: 2rem; /* Reduce el tamaño del título principal. */
     }
 
     h3 {
-        font-size: 1.5rem;
+        font-size: 1.5rem; /* Reduce el tamaño del subtítulo. */
     }
 
     p {
-        font-size: 0.9rem;
+        font-size: 0.9rem; /* Reduce el tamaño del texto de los párrafos. */
     }
 }
 
-/* Header */
 header {
-    background: linear-gradient(to right, #1a1a2e, #e94560);
-    padding: 10px 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(to right, #1a1a2e, #e94560); /* Degradado horizontal para el encabezado. */
+    padding: 10px 0; /* Espaciado vertical dentro del encabezado. */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra para dar un efecto elevado. */
 }
 
 nav {
-    display: flex;
-    justify-content: space-between; /* Asegura que los elementos estén a los extremos */
-    align-items: center;
-    max-width: 1200px;
-    margin: auto;
-    padding: 0 20px;
+    display: flex; /* Utiliza un diseño flex para distribuir los elementos. */
+    justify-content: space-between; /* Coloca los elementos a los extremos opuestos. */
+    align-items: center; /* Centra los elementos verticalmente. */
+    max-width: 1200px; /* Limita el ancho máximo de la barra de navegación. */
+    margin: auto; /* Centra la barra de navegación dentro del contenedor. */
+    padding: 0 20px; /* Agrega relleno horizontal. */
 }
 
 .logo {
-    max-height: 60px;
-    width: auto;
-    display: block;
-    margin-right: 0.1px; /* Agrega espacio entre el logo y el menú */
-    object-fit: contain;
+    max-height: 60px; /* Limita la altura máxima de la imagen del logo. */
+    width: auto; /* Ajusta el ancho proporcionalmente. */
+    display: block; /* Muestra el logo como un bloque. */
+    margin-right: 0.1px; /* Espacio mínimo entre el logo y otros elementos. */
+    object-fit: contain; /* Ajusta el contenido sin deformarlo. */
 }
 
 nav ul {
-    list-style: none;
-    display: flex;
-    gap: 15px;
+    list-style: none; /* Elimina los puntos de las listas. */
+    display: flex; /* Muestra los elementos de la lista en línea. */
+    gap: 15px; /* Espaciado entre los elementos. */
 }
 
 nav ul li {
-    display: inline;
+    display: inline; /* Muestra los elementos de la lista en línea. */
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: #f8f8f8;
-    font-size: 1rem;
-    transition: color 0.3s;
+    text-decoration: none; /* Elimina el subrayado de los enlaces. */
+    color: #f8f8f8; /* Establece el color del texto como blanco. */
+    font-size: 1rem; /* Tamaño estándar para el texto del enlace. */
+    transition: color 0.3s; /* Suaviza los cambios de color. */
 }
 
 nav ul li a:hover {
-    color: #00adb5;
+    color: #00adb5; /* Cambia el color a cian al pasar el mouse. */
 }
 
-/* Pagination */
 .pagination {
-    display: flex;
-    justify-content: center;
-    margin: 50px 0; /* Aumenta el margen para separar la paginación */
+    display: flex; /* Muestra los elementos de la paginación en línea. */
+    justify-content: center; /* Centra horizontalmente la paginación. */
+    margin: 50px 0; /* Agrega espacio vertical a la paginación. */
 }
 
 .pagination a {
-    text-decoration: none;
-    color: #f8f8f8;
-    padding: 8px 16px;
-    margin: 0 5px;
-    background: #1a1a2e;
-    border-radius: 5px;
-    transition: background 0.3s ease, color 0.3s ease;
+    text-decoration: none; /* Elimina el subrayado. */
+    color: #f8f8f8; /* Color blanco para el texto. */
+    padding: 8px 16px; /* Espaciado interno. */
+    margin: 0 5px; /* Espaciado horizontal entre los elementos. */
+    background: #1a1a2e; /* Fondo azul oscuro para los enlaces. */
+    border-radius: 5px; /* Bordes redondeados. */
+    transition: background 0.3s ease, color 0.3s ease; /* Suaviza los cambios de color y fondo. */
 }
 
 .pagination a:hover {
-    background: #e94560;
-    color: #fff;
+    background: #e94560; /* Fondo rojo al pasar el mouse. */
+    color: #fff; /* Cambia el color del texto a blanco. */
 }
 
-/* Deshabilitar botones de paginación */
 .pagination a.disabled {
-    background-color: #444;
-    cursor: not-allowed;
+    background-color: #444; /* Fondo gris para enlaces deshabilitados. */
+    cursor: not-allowed; /* Cambia el cursor a un icono de no permitido. */
 }
 
-/* Footer */
 footer {
-    background: linear-gradient(to right, #1a1a2e, #e94560);
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    font-size: 0.9rem;
+    background: linear-gradient(to right, #1a1a2e, #e94560); /* Degradado horizontal para el pie de página. */
+    color: #fff; /* Texto blanco. */
+    text-align: center; /* Centra el texto horizontalmente. */
+    padding: 10px; /* Espaciado interno. */
+    position: fixed; /* Fija el pie de página en la parte inferior. */
+    width: 100%; /* Ancho completo del contenedor. */
+    bottom: 0; /* Posiciona el pie de página al fondo de la ventana. */
+    font-size: 0.9rem; /* Tamaño del texto reducido. */
 }
